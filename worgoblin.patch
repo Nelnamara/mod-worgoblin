@@ -5,7 +5,7 @@
  3 files changed, 11 insertions(+), 7 deletions(-)
 
 diff --git a/src/server/game/Entities/Player/Player.cpp b/src/server/game/Entities/Player/Player.cpp
-index 80818758fad0..5c2a1f9cbd82 100644
+index 80818758fad0..5c2a1f9cbd82 100755
 --- a/src/server/game/Entities/Player/Player.cpp
 +++ b/src/server/game/Entities/Player/Player.cpp
 @@ -12031,6 +12031,9 @@ float Player::GetReputationPriceDiscount(Creature const* creature) const
@@ -19,7 +19,7 @@ index 80818758fad0..5c2a1f9cbd82 100644
      {
          return 1.0f;
 diff --git a/src/server/game/Handlers/CharacterHandler.cpp b/src/server/game/Handlers/CharacterHandler.cpp
-index e159441c88a5..9a086c5a1427 100644
+index e159441c88a5..9a086c5a1427 100755
 --- a/src/server/game/Handlers/CharacterHandler.cpp
 +++ b/src/server/game/Handlers/CharacterHandler.cpp
 @@ -2149,7 +2149,7 @@ void WorldSession::HandleCharFactionOrRaceChangeCallback(std::shared_ptr<Charact
@@ -32,7 +32,7 @@ index e159441c88a5..9a086c5a1427 100644
              stmt = CharacterDatabase.GetPreparedStatement(CHAR_INS_CHAR_SKILL_LANGUAGE);
              stmt->SetData(0, lowGuid);
 diff --git a/src/server/shared/SharedDefines.h b/src/server/shared/SharedDefines.h
-index 584e0c3f854f..a647d586f8f3 100644
+index 584e0c3f854f..a647d586f8f3 100755
 --- a/src/server/shared/SharedDefines.h
 +++ b/src/server/shared/SharedDefines.h
 @@ -75,9 +75,10 @@ enum Races
